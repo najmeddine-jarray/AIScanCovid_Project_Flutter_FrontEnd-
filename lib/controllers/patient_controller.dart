@@ -26,6 +26,7 @@ class PatientController extends GetxController {
       }
     } catch (e) {
       Get.snackbar('Error', 'Failed to fetch patients: $e');
+      print(e);
     } finally {
       isLoading(false);
     }

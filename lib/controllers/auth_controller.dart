@@ -9,6 +9,7 @@ class AuthController extends GetxController {
     try {
       isLoading(true);
       final response = await ApiService.login(email, password);
+      Get.offAllNamed(Routes.patientList);
 
       if (response.statusCode == 200) {
         Get.offAllNamed(Routes.patientList);

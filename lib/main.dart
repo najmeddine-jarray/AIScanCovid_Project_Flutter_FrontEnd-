@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+
       initialRoute: Routes.WELCOME,
       getPages: AppPages.routes,
       // Error handling for failed route navigation

@@ -24,7 +24,7 @@ class ApiService {
 
   static Future<http.Response> getPatients() async {
     final response = await http.get(
-      Uri.parse('$baseUrl/get'),
+      Uri.parse('$baseUrl/getpatients'),
       headers: {'Content-Type': 'application/json'},
     );
     return response;
